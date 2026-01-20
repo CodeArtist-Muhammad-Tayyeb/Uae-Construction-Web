@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Service Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      padding: 40px 0;
+      background: #f9f9f9;
+    }
+    .service-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+    }
+    .service-box img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <div class="service-box">
+          <h2 id="service-title"></h2>
+          <img id="service-image" src="" alt="">
+          <p id="service-description"></p>
+          <ul id="service-points"></ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const services = {
+      fabrication: {
+        title: "Structural Steel Fabrication",
+        image: "assets/img/services-imgs/structuredesign.png",
+        description:
+          "At AFK Building and Maintenance Company, Dubai, we provide high-quality structural steel fabrication services for residential, commercial, and industrial projects.",
+        points: [
+          "Accurate cutting and welding of steel structures",
+          "Fabrication according to safety standards",
+          "Reliable and timely project execution"
+        ]
+      },
+
+      racking: {
+        title: "Racking & Shelving Systems",
+        image: "assets/img/services-imgs/racking.png",
+        description:
+          "Efficient racking and shelving solutions designed for warehouses and offices.",
+        points: [
+          "Space-saving designs",
+          "Heavy-duty materials",
+          "Customized solutions"
+        ]
+      },
+
+      mezzanine: {
+        title: "Mezzanine Floors",
+        image: "assets/img/services-imgs/mezzanine.png",
+        description:
+          "Strong mezzanine floor systems to expand usable space in industrial facilities.",
+        points: [
+          "High load capacity",
+          "Durable construction",
+          "Fast installation"
+        ]
+      },
+
+      tiles: {
+        title: "Tiles & Marble Works",
+        image: "assets/img/services-imgs/tiles.png",
+        description:
+          "Premium tiles and marble installation for elegant interiors.",
+        points: [
+          "High-quality finishes",
+          "Long-lasting materials",
+          "Professional workmanship"
+        ]
+      },
+
+      glass: {
+        title: "Glass & Gypsum Partitions",
+        image: "assets/img/services-imgs/glass.png",
+        description:
+          "Modern glass and gypsum partition solutions for offices.",
+        points: [
+          "Contemporary designs",
+          "Sound insulation options",
+          "Quick execution"
+        ]
+      },
+
+      ac: {
+        title: "AC Installation & Maintenance",
+        image: "assets/img/services-imgs/ac.png",
+        description:
+          "Complete AC installation, servicing, and repair solutions.",
+        points: [
+          "Certified technicians",
+          "Emergency support",
+          "Energy-efficient systems"
+        ]
+      }
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const key = params.get("service");
+
+    if (services[key]) {
+      document.getElementById("service-title").textContent = services[key].title;
+      document.getElementById("service-image").src = services[key].image;
+      document.getElementById("service-description").textContent =
+        services[key].description;
+
+      const ul = document.getElementById("service-points");
+      services[key].points.forEach(point => {
+        const li = document.createElement("li");
+        li.innerHTML = `<i class="bi bi-check-circle"></i> ${point}`;
+        ul.appendChild(li);
+      });
+    } else {
+      document.getElementById("service-title").textContent =
+        "Service not found";
+    }
+  </script>
+
+</body>
+</html>
