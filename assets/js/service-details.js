@@ -106,7 +106,7 @@ const services = {
 
 fabrication:{
 title:"Structural Steel Fabrication",
-image:"assets/img/services-imgs/structuredesign.png",
+image:"assets/img/services-imgs/fabrication/f1.jpeg",
 text:"We provide professional steel fabrication services.",
 points:[
 "Steel beam fabrication",
