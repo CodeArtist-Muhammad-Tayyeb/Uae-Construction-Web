@@ -33,29 +33,27 @@
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+<header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    <a href="index.html" class="logo d-flex align-items-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="./assets/img/AFK logo.png" alt=""> -->
+      <h1 class="sitename">AFK</h1>
+    </a>
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="./assets/img/AFK logo.png" alt=""> -->
-        <h1 class="sitename">AFK</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-    </div>
-  </header>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+  </div>
+</header>
 
   <main class="main">
 
@@ -317,13 +315,13 @@
 
     </section><!-- /Call To Action Section -->
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+    <!-- Projects Section -- Only the portfolio id change to projects -->
+    <section id="projects" class="portfolio section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <div><span>Check Our</span> <span class="description-title">Portfolio</span></div>
+        <h2>Projects</h2>
+        <div><span>Check Our</span> <span class="description-title">Projects</span></div>
       </div><!-- End Section Title -->
 
       <div class="container-fluid">
@@ -332,131 +330,75 @@
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">Residential</li>
-            <li data-filter=".filter-product">Commercial</li>
-            <li data-filter=".filter-branding">Industrial</li>
-            <li data-filter=".filter-books">Custom</li>
+            <li data-filter=".filter-residential">Residential</li>
+            <li data-filter=".filter-commercial">Commercial</li>
+            <li data-filter=".filter-industrial">Industrial</li>
+            <li data-filter=".filter-custom">Custom</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row g-0 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <div class="col-xl-4 col-lg-4 col-md-6 portfolio-item isotope-item filter-residential">
               <div class="portfolio-content h-100">
-                <img src="./assets/img/services-imgs/Stairs-01.jpeg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <a href="./assets/img/services-imgs/Stairs-01.jpeg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
+                <img src="./assets/img/projects/f1.jpeg" class="img-fluid" alt="">
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-lg-4 col-md-6 portfolio-item isotope-item filter-commercial">
+              <div class="portfolio-content h-100">
+                <img src="./assets/img/projects/f2.jpeg" class="img-fluid" alt="">
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-lg-4 col-md-6 portfolio-item isotope-item filter-industrial">
+              <div class="portfolio-content h-100">
+                <img src="./assets/img/projects/gp1.jpeg" class="img-fluid" alt="">
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <div class="col-xl-4 col-lg-4 col-md-6 portfolio-item isotope-item filter-custom">
               <div class="portfolio-content h-100">
-                <img src="./assets/img/services-imgs/stairs-02.jpeg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <a href="./assets/img/services-imgs/stairs-02.jpeg" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
+                <img src="assets/img/projects/gp2.jpeg" class="img-fluid" alt="">
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <div class="col-xl-4 col-lg-4 col-md-6 portfolio-item isotope-item filter-residential">
               <div class="portfolio-content h-100">
-                <img src="./assets/img/services-imgs/stairs-03.jpeg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <a href="./assets/img/services-imgs/stairs-03.jpeg" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
+                <img src="assets/img/projects/m1.jpeg" class="img-fluid" alt="">
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+            <div class="col-xl-4 col-lg-4 col-md-6 portfolio-item isotope-item filter-commercial">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <a href="assets/img/portfolio/books-1.jpg" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
+                <img src="assets/img/projects/m2.jpeg" class="img-fluid" alt="">
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <div class="col-xl-4 col-lg-4 col-md-6 portfolio-item isotope-item filter-industrial">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <a href="assets/img/portfolio/app-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
+                <img src="assets/img/projects/mf1.jpeg" class="img-fluid" alt="">
+              
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <div class="col-xl-4 col-lg-4 col-md-6 portfolio-item isotope-item filter-custom">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <a href="assets/img/portfolio/product-2.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
+                <img src="assets/img/projects/mf2.jpeg" class="img-fluid" alt="">
+               
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <div class="col-xl-4 col-lg-4 col-md-6 portfolio-item isotope-item filter-residential">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <a href="assets/img/portfolio/branding-2.jpg" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
+                <img src="assets/img/projects/r1.jpeg" class="img-fluid" alt="">
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+            <div class="col-xl-4 col-lg-4 col-md-6 portfolio-item isotope-item filter-commercial">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <a href="assets/img/portfolio/books-2.jpg" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <a href="assets/img/portfolio/app-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <a href="assets/img/portfolio/product-3.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <a href="assets/img/portfolio/branding-3.jpg" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <a href="assets/img/portfolio/books-3.jpg" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
+                <img src="assets/img/projects/r2.jpeg" class="img-fluid" alt="">
               </div>
             </div><!-- End Portfolio Item -->
 
@@ -655,61 +597,63 @@
 
 
 
-  <footer id="footer" class="footer dark-background">
+<footer id="footer" class="footer dark-background">
 
-    <div class="container footer-top">
-      <div class="row gy-4">
-        
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">AFK</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>Musaffah M37</p>
-            <p>Abu Dhabi, United Arab Emirates</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@afk-group.ae</span></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
+  <div class="container footer-top">
+
+    <div class="row gy-4">   
+      <div class="col-lg-4 col-md-6 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span class="sitename">AFK</span>
+        </a>
+        <div class="footer-contact pt-3">
+          <p>Musaffah M37</p>
+          <p>Abu Dhabi, United Arab Emirates</p>
+          <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+          <p><strong>Email:</strong> <span>info@afk-group.ae</span></p>
         </div>
-
-        <div class="col-lg-4 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
+        <div class="social-links d-flex mt-4">
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
         </div>
-
-        <div class="col-lg-4 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
       </div>
+
+      <div class="col-lg-4 col-md-3 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#">Terms of service</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4 col-md-3 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="service-details.html?service=fabrication">Fabrication</a></li>
+          <li><a href="service-details.html?service=racking">Racking & Shelving</a></li>
+          <li><a href="service-details.html?service=mezzanine">Mezzanine Floors</a></li>
+          <li><a href="service-details.html?service=tiles">Tiles & Marble</a></li>
+          <li><a href="service-details.html?service=glass">Glass & Gypsum Partitions</a></li>
+          <li><a href="service-details.html?service=ac">AC Installation & Maintenance</a></li>
+        </ul>
+      </div>
+
     </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>© 2025<strong class="px-1 sitename">AFK</strong><span>Buildings & Maintenance LLC. All Rights Reserved.</span></p>
-      <div class="credits">
+  </div>
+
+  <div class="container copyright text-center mt-4">
+    <p>© 2025<strong class="px-1 sitename">AFK</strong><span>Buildings & Maintenance LLC. All Rights Reserved.</span></p>
+    <div class="credits">
         Design & Developed by <a href="https://www.linkedin.com/in/itsmuhammadtayyeb/" target="_blank">Muhammad Tayyeb</a>
-      </div>
     </div>
+  </div>
 
-  </footer>
+</footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
